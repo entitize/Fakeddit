@@ -28,7 +28,7 @@ Download image data
 Install required python libraries
 
 ```
-$ pip install -r /path/to/requirements.txt
+$ pip install -r requirements.txt
 ```
 
 Run image downloader
