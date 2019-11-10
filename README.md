@@ -25,6 +25,7 @@ $ git clone https://github.com/entitize/Fakeddit.git
 ```
 
 Download image data
+
 Install required python libraries
 
 ```
