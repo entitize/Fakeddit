@@ -10,7 +10,9 @@ Our lab: http://nlp.cs.ucsb.edu/index.html
 
 ## Getting Started
 
-Follow the instructions to download the dataset. You can download text, metadata, and image data. 
+Follow the instructions to download the dataset. You can download text, metadata, and image data. (comment data is coming soon)
+
+Note that released test set is public. Private test set is used for leaderboard (coming soon). 
 
 ### Prerequisites
 script tested on python 3.5
@@ -38,7 +40,8 @@ Run image downloader
 $ python image_downloader.py type client_id client_secret user_agent
 ```
 
-substitute `type` with either `train` or `validate`
+substitute `type` with either `train`, `validate`, or `test`
+
 substitute `client_id`, `client_scret` and `user_agent` with your own values
 
 If you encounter an error, make sure the command line parameters you set don't have any `(` or `)` or any other funny characters
