@@ -12,7 +12,7 @@ Our lab: http://nlp.cs.ucsb.edu/index.html
 
 Follow the instructions to download the dataset. You can download text, metadata, comment data, and image data
 
-Note that released test set is public. Private test set is used for leaderboard (coming soon). 
+Note that released test set is public. Private test set is used for leaderboard. 
 
 ### Prerequisites
 script tested on python 3.5
@@ -48,8 +48,9 @@ If you encounter an error, make sure the command line parameters you set don't h
 
 ### Usage
 
-If you want to download the entire image dataset, run the `image_downloader.py` script for `train`, `validate`, and `test` (3 times)
+`train.tsv`, `validate.tsv`, and `test.tsv` contain text and metadata for the training, validation, and public testing datasets respectively.
 
-`comments.tsv` consists of comments made by Reddit users on the submissions. Use the `submission_id` column to identify which submission the comment is associated with. Note that one submission can have zero, one, or multiple comments.
+`comments.tsv` consists of comments made by Reddit users on submissions in the entire released dataset. Use the `submission_id` column to identify which submission the comment is associated with. Note that one submission can have zero, one, or multiple comments.
+
 
 
