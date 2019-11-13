@@ -10,7 +10,7 @@ Our lab: http://nlp.cs.ucsb.edu/index.html
 
 ## Getting Started
 
-Follow the instructions to download the dataset. You can download text, metadata, and image data. (comment data is coming soon)
+Follow the instructions to download the dataset. You can download text, metadata, comment data, and image data
 
 Note that released test set is public. Private test set is used for leaderboard (coming soon). 
 
@@ -21,7 +21,7 @@ Follow the steps [here](https://github.com/reddit-archive/reddit/wiki/OAuth2) to
 
 ### Installing
 
-Download text and metadata
+Download text, comment, and metadata
 ```
 $ git clone https://github.com/entitize/Fakeddit.git
 ```
@@ -45,3 +45,11 @@ substitute `type` with either `train`, `validate`, or `test`
 substitute `client_id`, `client_scret` and `user_agent` with your own values
 
 If you encounter an error, make sure the command line parameters you set don't have any `(` or `)` or any other funny characters
+
+### Usage
+
+If you want to download the entire image dataset, run the `image_downloader.py` script for `train`, `validate`, and `test` (3 times)
+
+`comments.tsv` consists of comments made by Reddit users on the submissions. Use the `submission_id` column to identify which submission the comment is associated with. Note that one submission can have zero, one, or multiple comments.
+
+
