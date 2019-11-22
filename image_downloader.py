@@ -15,16 +15,11 @@ parser.add_argument('user_agent', type=str, help='user_agent')
 
 args = parser.parse_args()
 
-
-if (args.type != "train" and args.type != "validate" and args.type != "test"):
-  print("type must be train or validate")
-  sys.exit()
-
 reddit = praw.Reddit(client_id=args.client_id,
                      client_secret=args.client_secret,
                      user_agent=args.user_agent)
 
-df = pd.read_csv(args.type + ".tsv", sep="\t")
+df = pd.read_csv(args.type, sep="\t")
 
 pbar = tqdm(total=len(df))
 
@@ -46,4 +41,3 @@ for index, row in df.iterrows():
     urllib.request.urlretrieve(image_url, "images/" + row["id"] + ".jpg")
   pbar.update(1)
 print("done")
-
