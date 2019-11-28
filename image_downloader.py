@@ -32,12 +32,12 @@ for index, row in df.iterrows():
 
     # figure out resolution
     num_resolutions = len(submission.preview['images'][0]['resolutions'])
-    if num_resolutions < 3:
-        # download the best resolution
-        image_url = submission.preview['images'][0]['resolutions'][num_resolutions-1]['url']
+    if num_resolutions <= 0:
+      image_url = ""
+    elif num_resolutions < 3:
+      image_url = submission.preview['images'][0]['resolutions'][num_resolutions - 1]['url']
     else:
-        # limit resolution to the 3rd best picture
-        image_url = submission.preview['images'][0]['resolutions'][2]['url']
+      image_url = submission.preview['images'][0]['resolutions'][2]['url']
     urllib.request.urlretrieve(image_url, "images/" + row["id"] + ".jpg")
   pbar.update(1)
 print("done")
