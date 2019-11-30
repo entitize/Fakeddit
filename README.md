@@ -3,7 +3,7 @@
 Kai Nakamura, Sharon Levy, and William Yang Wang. 2019. r/Fakeddit: A New Multimodal Benchmark Dataset for Fine-grained Fake News Detection
 It's not a subreddit. It's named Fakeddit because Fake News + Reddit = Fakeddit
 
-Paper: _
+Paper: https://arxiv.org/abs/1911.03854
 
 Our lab: http://nlp.cs.ucsb.edu/index.html
 
@@ -20,9 +20,13 @@ Please let us know if you encounter any problems by opening an issue or by direc
 #### Download text, metadata, and comments
 Download the v1.0 dataset from [here](https://drive.google.com/open?id=1ZuCV2_jkUZCYPyCtOhijU7t4bIkYLk9V)
 
+Download the comment data from [here](https://drive.google.com/file/d/14iroKftRkRxF9LCinZVaKxHnwScbUfKb/view?usp=sharing)
+
 #### Download image data 
 
-Follow the steps [here](https://github.com/reddit-archive/reddit/wiki/OAuth2) to obtain `client_id`, `client_secret`, and `user_agent`
+The `*.tsv` dataset files have an `image_url` column which contain the image urls. 
+
+For convenience, we have provided a script which will download the images for you. Please follow the instructions if you would like to use the attached script.
 
 Fork or clone this repository and install required python libraries
 
@@ -36,16 +40,12 @@ Copy `image_downloader.py` to the same directory/folder as where you downloaded 
 Run `image_downloader.py`  in the new directory/folder
 
 ```
-$ python image_downloader.py file client_id client_secret user_agent
+$ python image_downloader.py file
 ```
 
 substitute `file` with either `train.tsv`, `validate.tsv`, or `test.tsv`
 
-substitute `client_id`, `client_scret` and `user_agent` with your own values
-
 Note that you must run the `image_downloader.py` script 3 times to download the entire public dataset
-
-If you encounter an error, make sure the command line parameters you set don't have any `(` or `)` or any other funny characters
 
 ### Usage
 
