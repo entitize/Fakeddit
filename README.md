@@ -1,7 +1,6 @@
 # Fakeddit
 
-Kai Nakamura, Sharon Levy, and William Yang Wang. 2019. r/Fakeddit: A New Multimodal Benchmark Dataset for Fine-grained Fake News Detection
-It's not a subreddit. It's named Fakeddit because Fake News + Reddit = Fakeddit
+Kai Nakamura, Sharon Levy, and William Yang Wang. 2020. r/Fakeddit: A New Multimodal Benchmark Dataset for Fine-grained Fake News Detection
 
 Paper: https://arxiv.org/abs/1911.03854
 
@@ -11,14 +10,14 @@ Our lab: http://nlp.cs.ucsb.edu/index.html
 
 Follow the instructions to download the dataset. You can download text, metadata, comment data, and image data.
 
-Note that released test set is public. Private test set is used for leaderboard. 
+Note that released test set is public. Private test set is used for leaderboard (coming soon).
 
 Please let us know if you encounter any problems by opening an issue or by directly contacting us.
 
 ### Installation
 
 #### Download text, metadata, and comments
-Download the v1.0 dataset from [here](https://drive.google.com/open?id=1ZuCV2_jkUZCYPyCtOhijU7t4bIkYLk9V)
+Download the v2.0 dataset from [here](https://drive.google.com/drive/folders/1DQSGFSLOP22xhL-Px4tFpde3eYpCq7bQ?usp=sharing)
 
 Download the comment data from [here](https://drive.google.com/file/d/14iroKftRkRxF9LCinZVaKxHnwScbUfKb/view?usp=sharing)
 
@@ -50,5 +49,7 @@ Note that you must run the `image_downloader.py` script 3 times to download the 
 ### Usage
 
 `train.tsv`, `validate.tsv`, and `test.tsv` contain text and metadata for the training, validation, and public testing datasets respectively.
+
+If there are `Unnamed`... columns, you can ignore or get rid of them. Use the `clean_title` column to get filtered text data. 
 
 `comments.tsv` consists of comments made by Reddit users on submissions in the entire released dataset. Use the `submission_id` column to identify which submission the comment is associated with. Note that one submission can have zero, one, or multiple comments.
