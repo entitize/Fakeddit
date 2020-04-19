@@ -12,6 +12,8 @@ Follow the instructions to download the dataset. You can download text, metadata
 
 Note that released test set is public. Private test set is used for leaderboard (coming soon).
 
+Please read the `Usage` section. It is important.  
+
 Please let us know if you encounter any problems by opening an issue or by directly contacting us.
 
 ### Installation
@@ -48,8 +50,12 @@ Note that you must run the `image_downloader.py` script 3 times to download the 
 
 ### Usage
 
+Please ignore the first four columns in the `.tsv` files. 
+
 `train.tsv`, `validate.tsv`, and `test.tsv` contain text and metadata for the training, validation, and public testing datasets respectively.
 
 If there are `Unnamed`... columns, you can ignore or get rid of them. Use the `clean_title` column to get filtered text data. 
 
 `comments.tsv` consists of comments made by Reddit users on submissions in the entire released dataset. Use the `submission_id` column to identify which submission the comment is associated with. Note that one submission can have zero, one, or multiple comments.
+
+Note: In our paper, only samples that have both image and text were used for the baseline experiments and error analysis.
