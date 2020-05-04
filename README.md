@@ -25,7 +25,11 @@ Download the comment data from [here](https://drive.google.com/file/d/14iroKftRk
 
 #### Download image data 
 
-The `*.tsv` dataset files have an `image_url` column which contain the image urls. 
+**Option 1:**
+Download the images [here](https://drive.google.com/file/d/1cjY6HsHaSZuLVHywIxD5xQqng33J5S2b/view?usp=sharing).
+
+**Option 2:**
+The `*.tsv` dataset files have an `image_url` column which contain the image urls. You can use the URLs to download the images. Only multimodal images 
 
 For convenience, we have provided a script which will download the images for you. Please follow the instructions if you would like to use the attached script.
 
