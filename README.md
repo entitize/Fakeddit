@@ -2,9 +2,15 @@
 
 Kai Nakamura, Sharon Levy, and William Yang Wang. 2020. r/Fakeddit: A New Multimodal Benchmark Dataset for Fine-grained Fake News Detection
 
+Website: https://fakeddit.netlify.app/
+
+Codalab Competition: https://competitions.codalab.org/competitions/25337
+
 Paper: https://arxiv.org/abs/1911.03854
 
 Our lab: http://nlp.cs.ucsb.edu/index.html
+
+
 
 ## Getting Started
 
