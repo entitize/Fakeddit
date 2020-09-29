@@ -36,7 +36,7 @@ Download the comment data from [here](https://drive.google.com/file/d/14iroKftRk
 Download the images [here](https://drive.google.com/drive/folders/1jU7qgDqU1je9Y0PMKJ_f31yXRo5uWGFm?usp=sharing).
 
 **Option 2:**
-The `*.tsv` dataset files have an `image_url` column which contain the image urls. You can use the URLs to download the images. Only multimodal images 
+The `*.tsv` dataset files have an `image_url` column which contain the image urls. You can use the URLs to download the images.
 
 For convenience, we have provided a script which will download the images for you. Please follow the instructions if you would like to use the attached script.
 
@@ -58,8 +58,6 @@ $ python image_downloader.py file_name
 ### Usage
 
 Please note that results in the paper are based on multimodal samples only (samples that have both text and image). In our paper, only samples that have both image and text were used for the baseline experiments and error analysis. Thus, if you would like to compare against the results in the paper, use the samples in the `multimodal_only_samples` folder. 
-
-Please ignore the first four columns in the `.tsv` files. 
 
 If there are `Unnamed`... columns, you can ignore or get rid of them. Use the `clean_title` column to get filtered text data. 
 
