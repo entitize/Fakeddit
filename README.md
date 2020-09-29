@@ -26,14 +26,14 @@ Please let us know if you encounter any problems by opening an issue or by direc
 
 #### Download text, metadata, and comments
 Please read the USAGE section before using or downloading. 
-Download the v2.0 dataset from [here](https://drive.google.com/drive/folders/1DQSGFSLOP22xhL-Px4tFpde3eYpCq7bQ?usp=sharing) 
+Download the v2.0 dataset from [here](https://drive.google.com/drive/folders/1jU7qgDqU1je9Y0PMKJ_f31yXRo5uWGFm?usp=sharing) 
 
 Download the comment data from [here](https://drive.google.com/file/d/14iroKftRkRxF9LCinZVaKxHnwScbUfKb/view?usp=sharing)
 
 #### Download image data 
 
 **Option 1: (RECOMMENDED)**
-Download the images [here](https://drive.google.com/drive/folders/1jU7qgDqU1je9Y0PMKJ_f31yXRo5uWGFm?usp=sharing).
+Download the images [here](https://drive.google.com/file/d/1cjY6HsHaSZuLVHywIxD5xQqng33J5S2b/view?usp=sharing).
 
 **Option 2:**
 The `*.tsv` dataset files have an `image_url` column which contain the image urls. You can use the URLs to download the images.
