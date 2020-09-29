@@ -33,7 +33,7 @@ Download the comment data from [here](https://drive.google.com/file/d/14iroKftRk
 #### Download image data 
 
 **Option 1: (RECOMMENDED)**
-Download the images [here](https://drive.google.com/file/d/1cjY6HsHaSZuLVHywIxD5xQqng33J5S2b/view?usp=sharing).
+Download the images [here](https://drive.google.com/drive/folders/1jU7qgDqU1je9Y0PMKJ_f31yXRo5uWGFm?usp=sharing).
 
 **Option 2:**
 The `*.tsv` dataset files have an `image_url` column which contain the image urls. You can use the URLs to download the images. Only multimodal images 
