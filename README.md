@@ -25,13 +25,14 @@ Please let us know if you encounter any problems by opening an issue or by direc
 ### Installation
 
 #### Download text, metadata, and comments
-Download the v2.0 dataset from [here](https://drive.google.com/drive/folders/1DQSGFSLOP22xhL-Px4tFpde3eYpCq7bQ?usp=sharing)
+Please read the USAGE section before using or downloading. 
+Download the v2.0 dataset from [here](https://drive.google.com/drive/folders/1DQSGFSLOP22xhL-Px4tFpde3eYpCq7bQ?usp=sharing) 
 
 Download the comment data from [here](https://drive.google.com/file/d/14iroKftRkRxF9LCinZVaKxHnwScbUfKb/view?usp=sharing)
 
 #### Download image data 
 
-**Option 1:**
+**Option 1: (RECOMMENDED)**
 Download the images [here](https://drive.google.com/file/d/1cjY6HsHaSZuLVHywIxD5xQqng33J5S2b/view?usp=sharing).
 
 **Option 2:**
@@ -51,21 +52,15 @@ Copy `image_downloader.py` to the same directory/folder as where you downloaded 
 Run `image_downloader.py`  in the new directory/folder
 
 ```
-$ python image_downloader.py file
+$ python image_downloader.py file_name
 ```
-
-substitute `file` with either `train.tsv`, `validate.tsv`, or `test.tsv`
-
-Note that you must run the `image_downloader.py` script 3 times to download the entire public dataset
 
 ### Usage
 
-Please ignore the first four columns in the `.tsv` files. 
+Please note that results in the paper are based on multimodal samples only (samples that have both text and image). In our paper, only samples that have both image and text were used for the baseline experiments and error analysis. Thus, if you would like to compare against the results in the paper, use the samples in the `multimodal_only_samples` folder. 
 
-`train.tsv`, `validate.tsv`, and `test.tsv` contain text and metadata for the training, validation, and public testing datasets respectively.
+Please ignore the first four columns in the `.tsv` files. 
 
 If there are `Unnamed`... columns, you can ignore or get rid of them. Use the `clean_title` column to get filtered text data. 
 
 `comments.tsv` consists of comments made by Reddit users on submissions in the entire released dataset. Use the `submission_id` column to identify which submission the comment is associated with. Note that one submission can have zero, one, or multiple comments.
-
-Note: In our paper, only samples that have both image and text were used for the baseline experiments and error analysis.
