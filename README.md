@@ -24,11 +24,9 @@ Please let us know if you encounter any problems by opening an issue or by direc
 
 ### Installation
 
-#### Download text, metadata, and comments
+#### Download text and metadata
 Please read the USAGE section before using or downloading. 
 Download the v2.0 dataset from [here](https://drive.google.com/drive/folders/1jU7qgDqU1je9Y0PMKJ_f31yXRo5uWGFm?usp=sharing) 
-
-Download the comment data from [here](https://drive.google.com/file/d/14iroKftRkRxF9LCinZVaKxHnwScbUfKb/view?usp=sharing)
 
 #### Download image data 
 
@@ -54,6 +52,9 @@ Run `image_downloader.py`  in the new directory/folder
 ```
 $ python image_downloader.py file_name
 ```
+
+#### Download comment data
+Download the comment data from [here](https://drive.google.com/drive/folders/150sL4SNi5zFK8nmllv5prWbn0LyvLzvo?usp=sharing)
 
 ### Usage
 
