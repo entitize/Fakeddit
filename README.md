@@ -63,3 +63,19 @@ Please note that results in the paper are based on multimodal samples only (samp
 If there are `Unnamed`... columns, you can ignore or get rid of them. Use the `clean_title` column to get filtered text data. 
 
 `comments.tsv` consists of comments made by Reddit users on submissions in the entire released dataset. Use the `submission_id` column to identify which submission the comment is associated with. Note that one submission can have zero, one, or multiple comments.
+
+## Labeling Scheme
+### 6-way labels
+**True**: 0  
+**Satire/Parody**: 1  
+**False Connection**: 2  
+**Imposter Content**: 3  
+**Manipulated Content**: 4  
+**Misleading Content**: 5  
+### 3-way labels
+**True**: 0  
+**Fake with true text**: 1  
+**Fake with false text**: 2  
+### 2-way labels
+**False**: 0  
+**True**: 1
